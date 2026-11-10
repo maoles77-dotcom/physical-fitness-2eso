@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Physical Fitness · 2º ESO</title>
+  <meta name="description" content="Physical Fitness (2º ESO, Physical Education). Bilingual English–Spanish topic with animations, vocabulary, flashcards and a quiz.">
+  <meta name="theme-color" content="#0A5CFF">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,600;0,700;0,800;1,700;1,800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-lang="both">
+
+<a class="skip" href="#main">
+  <span lang="en">Skip to content</span><span lang="es">Ir al contenido</span>
+</a>
+
+<div class="progress" aria-hidden="true"><div class="progress-bar" id="progressBar"></div></div>
+
+<!-- ================= TOP BAR ================= -->
+<header class="topbar" id="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="#top" aria-label="Physical Fitness">
+      <svg class="brand-mark" viewBox="0 0 40 40" aria-hidden="true">
+        <circle cx="20" cy="22" r="14" fill="none" stroke="currentColor" stroke-width="3.5"/>
+        <rect x="16" y="3" width="8" height="5" rx="2" fill="currentColor"/>
+        <path d="M20 22 L20 13" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" class="brand-hand"/>
+      </svg>
+      <span class="brand-text">Physical<b>Fitness</b></span>
+    </a>
+
+    <nav class="nav" aria-label="Sections">
+      <a href="#intro" data-spy="intro"><span lang="en">Intro</span><span lang="es">Inicio</span></a>
+      <a href="#basic" data-spy="basic"><span lang="en">Basic abilities</span><span lang="es">Cualidades básicas</span></a>
+      <a href="#psycho" data-spy="psycho"><span lang="en">Psychomotor</span><span lang="es">Psicomotrices</span></a>
+      <a href="#summary" data-spy="summary"><span lang="en">Summary</span><span lang="es">Resumen</span></a>
+      <a href="#vocab" data-spy="vocab"><span lang="en">Vocabulary</span><span lang="es">Vocabulario</span></a>
+      <a href="#quiz" data-spy="quiz"><span lang="en">Quiz</span><span lang="es">Test</span></a>
+    </nav>
+
+    <div class="tools">
+      <div class="lang-switch" role="group" aria-label="Language / Idioma">
+        <button type="button" data-lang="en" aria-pressed="false" title="English">EN</button>
+        <button type="button" data-lang="both" aria-pressed="true" title="English + Español">EN<i>+</i>ES</button>
+        <button type="button" data-lang="es" aria-pressed="false" title="Español">ES</button>
+      </div>
+      <button type="button" class="icon-btn" id="motionBtn" aria-pressed="false" title="Pause animations / Pausar animaciones">
+        <svg viewBox="0 0 24 24" aria-hidden="true" class="ic-pause"><rect x="6" y="5" width="4" height="14" rx="1.5"/><rect x="14" y="5" width="4" height="14" rx="1.5"/></svg>
+        <svg viewBox="0 0 24 24" aria-hidden="true" class="ic-play"><path d="M8 5.5v13a1 1 0 0 0 1.5.86l10.5-6.5a1 1 0 0 0 0-1.72L9.5 4.64A1 1 0 0 0 8 5.5z"/></svg>
+        <span class="sr-only">Pause animations</span>
+      </button>
+      <button type="button" class="icon-btn" id="themeBtn" title="Light / dark mode">
+        <svg viewBox="0 0 24 24" aria-hidden="true" class="ic-moon"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5z"/></svg>
+        <svg viewBox="0 0 24 24" aria-hidden="true" class="ic-sun"><circle cx="12" cy="12" r="4.5"/><g stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2v2.5M12 19.5V22M2 12h2.5M19.5 12H22M4.9 4.9l1.8 1.8M17.3 17.3l1.8 1.8M4.9 19.1l1.8-1.8M17.3 6.7l1.8-1.8"/></g></svg>
+        <span class="sr-only">Toggle dark mode</span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- ================= HERO ================= -->
+<section class="hero" id="top">
+  <div class="hero-track" aria-hidden="true">
+    <svg viewBox="0 0 1200 600" preserveAspectRatio="xMidYMid slice">
+      <g fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M-50 520 C 300 420, 700 620, 1250 470"/>
+        <path d="M-50 560 C 300 460, 700 660, 1250 510"/>
+        <path d="M-50 600 C 300 500, 700 700, 1250 550"/>
+        <path d="M-50 640 C 300 540, 700 740, 1250 590"/>
+      </g>
+    </svg>
+  </div>
+  <div class="wrap hero-grid">
+    <div class="hero-text">
+      <p class="kicker">
+        <span lang="en">2º ESO · Physical Education · Bilingual</span><span lang="es">2º ESO · Educación Física · Bilingüe</span>
+      </p>
+      <h1 class="bi-title">
+        <span lang="en">Physical Fitness</span>
+        <span lang="es">La condición física</span>
+      </h1>
+      <p class="lead bi">
+        <span lang="en">How fit is your body? Discover the <b>basic physical abilities</b> and the <b>psychomotor abilities</b>, see them in motion and practise the vocabulary.</span>
+        <span lang="es">¿En qué forma está tu cuerpo? Descubre las <b>cualidades físicas básicas</b> y las <b>cualidades psicomotrices</b>, míralas en movimiento y practica el vocabulario.</span>
+      </p>
+      <div class="hero-cta">
+        <a class="btn btn-primary" href="#intro"><span lang="en">Let's start</span><span lang="es">Empezar</span>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13m-5-6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        <a class="btn btn-ghost" href="#vocab"><span lang="en">Vocabulary</span><span lang="es">Vocabulario</span></a>
+      </div>
+      <p class="hint">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a9 9 0 1 0 0 18 9 9 0 0 0 0-18zm0 4.5a1.2 1.2 0 1 1 0 2.4 1.2 1.2 0 0 1 0-2.4zM13.2 17h-2.4v-5.6h2.4z"/></svg>
+        <span lang="en">Tap the <span class="t-demo">underlined words</span> to see the translation and hear the pronunciation.</span>
+        <span lang="es">Toca las <span class="t-demo">palabras subrayadas</span> para ver la traducción y escuchar cómo se pronuncian.</span>
+      </p>
+    </div>
+    <div class="hero-art" id="heroArt" aria-hidden="true"></div>
+  </div>
+  <div class="wrap hero-chips" aria-hidden="true">
+    <span class="chip c-end">Endurance</span><span class="chip c-str">Strength</span><span class="chip c-spd">Speed</span><span class="chip c-flx">Flexibility</span><span class="chip c-bal">Balance</span><span class="chip c-coo">Coordination</span><span class="chip c-agi">Agility</span>
+  </div>
+</section>
+
+<!-- ================= 0. INTRO ================= -->
+<section class="section" id="intro">
+  <div class="wrap">
+    <header class="sec-head reveal">
+      <span class="sec-num">00</span>
+      <h2 class="bi-title">
+        <span lang="en">What is physical fitness?</span>
+        <span lang="es">¿Qué es la condición física?</span>
+      </h2>
+    </header>
+
+    <div class="bi reveal">
+      <p lang="en"><b class="t" data-tr="condición física">Physical fitness</b> refers to the condition of an individual’s body. A person who is physically fit can perform activities more effectively and vigorously, <b class="t" data-tr="evitar">avoiding</b> <b class="t" data-tr="lesiones">injuries</b> and using less energy. People who are not physically fit, on the other hand, become tired soon after starting an activity, and their ability and <b class="t" data-tr="efectividad">effectiveness</b> <b class="t" data-tr="gradualmente">gradually</b> decline, both in sport and in everyday life.</p>
+      <p lang="es">La <b class="t" data-tr="physical fitness">condición física</b> se refiere al estado del cuerpo de una persona. Una persona en buena forma física puede realizar actividades de manera más eficaz y enérgica, <b class="t" data-tr="to avoid">evitando</b> <b class="t" data-tr="injuries">lesiones</b> y gastando menos energía. En cambio, las personas que no están en forma se cansan poco después de empezar una actividad, y su capacidad y su <b class="t" data-tr="effectiveness">eficacia</b> disminuyen <b class="t" data-tr="gradually">poco a poco</b>, tanto en el deporte como en la vida diaria.</p>
+    </div>
+
+    <div class="definition reveal">
+      <div class="definition-icon" aria-hidden="true">
+        <svg viewBox="0 0 48 48"><path d="M24 4 29.6 16.2 43 17.6 33 26.6 35.8 40 24 33.2 12.2 40 15 26.6 5 17.6 18.4 16.2Z"/></svg>
+      </div>
+      <div class="bi">
+        <p lang="en"><b class="t" data-tr="por lo tanto">Therefore</b>, physical fitness can be defined as <mark>the ability to <b class="t" data-tr="llevar a cabo">carry out</b> a specific task and meet its demands efficiently</mark>.
+          <button type="button" class="listen" data-say="Therefore, physical fitness can be defined as the ability to carry out a specific task and meet its demands efficiently." aria-label="Listen"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9v6h4l5 4V5L8 9H4zm12.5 3a4.5 4.5 0 0 0-2.5-4v8a4.5 4.5 0 0 0 2.5-4z"/></svg></button></p>
+        <p lang="es"><b class="t" data-tr="therefore">Por lo tanto</b>, la condición física puede definirse como <mark>la capacidad de <b class="t" data-tr="to carry out">llevar a cabo</b> una tarea concreta y responder a sus exigencias de forma eficiente</mark>.</p>
+      </div>
+    </div>
+
+    <div class="compare reveal">
+      <article class="compare-card good">
+        <div class="battery" aria-hidden="true"><span style="--lvl:.92"></span></div>
+        <h3 class="bi-title small"><span lang="en">Good physical fitness</span><span lang="es">Buena condición física</span></h3>
+        <div class="bi">
+          <p lang="en">A person with good <b class="t" data-tr="masa muscular">muscle mass</b>, no excess <b class="t" data-tr="peso">weight</b> and good general health. They can take part in sports, go on long walks or make physical efforts without difficulty.</p>
+          <p lang="es">Una persona con buena <b class="t" data-tr="muscle mass">masa muscular</b>, sin exceso de <b class="t" data-tr="weight">peso</b> y con buena salud general. Puede practicar deporte, dar largos paseos o hacer esfuerzos físicos sin dificultad.</p>
+        </div>
+      </article>
+      <article class="compare-card poor">
+        <div class="battery" aria-hidden="true"><span style="--lvl:.18"></span></div>
+        <h3 class="bi-title small"><span lang="en">Poor physical fitness</span><span lang="es">Condición física baja</span></h3>
+        <div class="bi">
+          <p lang="en">Someone with excess body fat and little flexibility, or someone who is extremely thin. They may find it difficult to take part in sports or even manage everyday activities because of low stamina and frequent fatigue and <b class="t" data-tr="dificultad para respirar">breathlessness</b>.</p>
+          <p lang="es">Alguien con exceso de grasa corporal y poca flexibilidad, o alguien extremadamente delgado. Le puede costar practicar deporte o incluso las actividades cotidianas, por su poco aguante y por el cansancio y la <b class="t" data-tr="breathlessness">dificultad para respirar</b> frecuentes.</p>
+        </div>
+      </article>
+    </div>
+
+    <div class="keys-intro bi reveal">
+      <p lang="en">To <b class="t" data-tr="conseguir">achieve</b> good physical fitness, you need at least:</p>
+      <p lang="es">Para <b class="t" data-tr="to achieve">conseguir</b> una buena condición física necesitas, al menos:</p>
+    </div>
+    <div class="keys reveal">
+      <div class="key">
+        <svg viewBox="0 0 64 64" aria-hidden="true" class="key-ic"><g fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round"><path d="M20 32h24"/><rect x="10" y="22" width="8" height="20" rx="3"/><rect x="46" y="22" width="8" height="20" rx="3"/><path d="M5 28v8M59 28v8"/></g></svg>
+        <b class="bi-title small"><span lang="en">Training</span><span lang="es">Entrenamiento</span></b>
+      </div>
+      <div class="key">
+        <svg viewBox="0 0 64 64" aria-hidden="true" class="key-ic"><g fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><path d="M32 20c-6-5-18-3-18 10 0 12 9 24 18 22 9 2 18-10 18-22 0-13-12-15-18-10z"/><path d="M32 20c0-6 3-10 8-12"/></g></svg>
+        <b class="bi-title small"><span lang="en">A healthy diet</span><span lang="es">Una dieta saludable</span></b>
+      </div>
+      <div class="key">
+        <svg viewBox="0 0 64 64" aria-hidden="true" class="key-ic"><g fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><path d="M46 38A18 18 0 0 1 26 14a18 18 0 1 0 20 24z"/><path d="M44 12h8l-8 9h8"/></g></svg>
+        <b class="bi-title small"><span lang="en">Good rest</span><span lang="es">Un buen descanso</span></b>
+      </div>
+    </div>
+
+    <div class="bi reveal">
+      <p lang="en">Physical fitness is linked to the <b class="t" data-tr="cualidades físicas básicas">basic physical abilities</b> (endurance, strength, speed and flexibility), as well as to <b class="t" data-tr="cualidades psicomotrices">psychomotor abilities</b> (agility, coordination and balance).</p>
+      <p lang="es">La condición física está relacionada con las <b class="t" data-tr="basic physical abilities">cualidades físicas básicas</b> (resistencia, fuerza, velocidad y flexibilidad) y con las <b class="t" data-tr="psychomotor abilities">cualidades psicomotrices</b> (agilidad, coordinación y equilibrio).</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 1. BASIC PHYSICAL ABILITIES ================= -->
+<section class="section alt" id="basic">
+  <div class="wrap">
+    <header class="sec-head reveal">
+      <span class="sec-num">01</span>
+      <h2 class="bi-title">
+        <span lang="en">Basic physical abilities</span>
+        <span lang="es">Cualidades físicas básicas</span>
+      </h2>
+    </header>
+    <div class="bi reveal">
+      <p lang="en">As we have seen, there are four basic physical abilities:</p>
+      <p lang="es">Como hemos visto, hay cuatro cualidades físicas básicas:</p>
+    </div>
+
+    <!-- ENDURANCE -->
+    <article class="ability c-end reveal" id="endurance">
+      <div class="ability-art">
+        <div class="art-stage" id="artEndurance" aria-hidden="true"></div>
+        <div class="toggle-row" role="group" aria-label="Type of endurance">
+          <button type="button" class="pill active" data-endu="aerobic"><span lang="en">Aerobic</span><span lang="es">Aeróbica</span></button>
+          <button type="button" class="pill" data-endu="anaerobic"><span lang="en">Anaerobic</span><span lang="es">Anaeróbica</span></button>
+        </div>
+        <div class="meters" id="enduMeters">
+          <div class="meter"><span class="meter-l"><span lang="en">Intensity</span><span lang="es">Intensidad</span></span><span class="meter-bar"><i id="mInt"></i></span></div>
+          <div class="meter"><span class="meter-l"><span lang="en">Duration</span><span lang="es">Duración</span></span><span class="meter-bar"><i id="mDur"></i></span></div>
+        </div>
+      </div>
+      <div class="ability-body">
+        <h3 class="ability-title bi-title"><span lang="en">Endurance</span><span lang="es">Resistencia</span>
+          <button type="button" class="listen" data-say="Endurance" aria-label="Listen"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9v6h4l5 4V5L8 9H4zm12.5 3a4.5 4.5 0 0 0-2.5-4v8a4.5 4.5 0 0 0 2.5-4z"/></svg></button></h3>
+        <div class="bi def">
+          <p lang="en"><b class="t" data-tr="resistencia">Endurance</b> is the basic physical ability that allows us to <mark>maintain an effort for as long as possible</mark>, coping with fatigue.</p>
+          <p lang="es">La <b class="t" data-tr="endurance">resistencia</b> es la cualidad física básica que nos permite <mark>mantener un esfuerzo durante el mayor tiempo posible</mark>, soportando la fatiga.</p>
+        </div>
+        <div class="types">
+          <div class="type">
+            <b class="bi-title small"><span lang="en">Aerobic endurance</span><span lang="es">Resistencia aeróbica</span></b>
+            <div class="bi"><p lang="en">Lasts a long time at low intensity (e.g. swimming for a while).</p><p lang="es">Dura mucho tiempo a baja intensidad (por ejemplo, nadar un rato).</p></div>
+          </div>
+          <div class="type">
+            <b class="bi-title small"><span lang="en">Anaerobic endurance</span><span lang="es">Resistencia anaeróbica</span></b>
+            <div class="bi"><p lang="en">Lasts a short time at high intensity (e.g. a sprint).</p><p lang="es">Dura poco tiempo a alta intensidad (por ejemplo, un esprint).</p></div>
+          </div>
+        </div>
+        <div class="age-tip">
+          <span class="age-tag"><span lang="en">At your age</span><span lang="es">A tu edad</span></span>
+          <div class="bi"><p lang="en">You can work on this ability gently, <b class="t" data-tr="buscando incrementar">aiming to increase</b> the <b class="t" data-tr="duración">length of time</b> you can exercise rather than the intensity.</p>
+          <p lang="es">Puedes trabajar esta cualidad de forma suave, <b class="t" data-tr="aiming to increase">buscando aumentar</b> la <b class="t" data-tr="length of time">duración</b> del ejercicio más que su intensidad.</p></div>
+        </div>
+      </div>
+    </article>
+
+    <!-- STRENGTH -->
+    <article class="ability c-str reveal" id="strength">
+      <div class="ability-art">
+        <div class="art-stage" aria-hidden="true">
+          <svg viewBox="0 0 240 240" class="arm-svg" id="armSvg">
+            <!-- Persona de perfil (al fondo) -->
+            <g class="body-far">
+              <circle cx="80" cy="30" r="18"/>
+              <line x1="84" y1="56" x2="84" y2="196" stroke-width="34"/>
+              <line x1="78" y1="196" x2="74" y2="240" stroke-width="16"/>
+              <line x1="92" y1="196" x2="96" y2="240" stroke-width="16"/>
+            </g>
+            <!-- Mesa -->
+            <rect x="60" y="214" width="176" height="9" rx="3" class="table"/>
+            <rect x="214" y="223" width="8" height="17" class="table"/>
+            <!-- Brazo -->
+            <g class="arm">
+              <line x1="110" y1="64" x2="110" y2="132" class="bone" stroke-width="24"/>
+              <ellipse id="triceps" cx="98" cy="96" rx="8" ry="24" class="muscle-2"/>
+              <ellipse id="biceps" cx="123" cy="98" rx="11" ry="27" class="muscle"/>
+              <g id="forearm">
+                <line x1="110" y1="132" x2="110" y2="188" class="bone" stroke-width="20"/>
+                <circle cx="110" cy="194" r="11" class="bone-fill"/>
+                <g class="book">
+                  <rect x="84" y="198" width="52" height="16" rx="3"/>
+                  <rect x="88" y="201" width="44" height="3" rx="1" class="book-page"/>
+                </g>
+              </g>
+              <circle cx="110" cy="64" r="13" class="bone-fill"/>
+              <circle cx="110" cy="132" r="10" class="joint"/>
+            </g>
+          </svg>
+        </div>
+        <div class="toggle-row" role="group" aria-label="Type of contraction">
+          <button type="button" class="pill" data-con="concentric"><span lang="en">Concentric</span><span lang="es">Concéntrica</span></button>
+          <button type="button" class="pill" data-con="isometric"><span lang="en">Isometric</span><span lang="es">Isométrica</span></button>
+          <button type="button" class="pill" data-con="eccentric"><span lang="en">Eccentric</span><span lang="es">Excéntrica</span></button>
+        </div>
+        <div class="caption bi" id="conCaption" aria-live="polite">
+          <p lang="en">Choose a type of contraction to see what the biceps does.</p>
+          <p lang="es">Elige un tipo de contracción para ver qué hace el bíceps.</p>
+        </div>
+      </div>
+      <div class="ability-body">
+        <h3 class="ability-title bi-title"><span lang="en">Strength</span><span lang="es">Fuerza</span>
+          <button type="button" class="listen" data-say="Strength" aria-label="Listen"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9v6h4l5 4V5L8 9H4zm12.5 3a4.5 4.5 0 0 0-2.5-4v8a4.5 4.5 0 0 0 2.5-4z"/></svg></button></h3>
+        <div class="bi def">
+          <p lang="en"><b class="t" data-tr="fuerza">Strength</b> is the basic physical ability that allows us to <mark><b class="t" data-tr="enfrentarse a cargas">deal with loads</b> through muscle action</mark>. We can <b class="t" data-tr="vencer una carga">overcome a load</b> (<b class="t" data-tr="contracciones concéntricas">concentric contractions</b>), <b class="t" data-tr="frenarla">slow it down</b> (<b class="t" data-tr="contracciones excéntricas">eccentric contractions</b>) or <b class="t" data-tr="mantenerla quieta">hold it still</b> (<b class="t" data-tr="contracciones isométricas">isometric contractions</b>).</p>
+          <p lang="es">La <b class="t" data-tr="strength">fuerza</b> es la cualidad física básica que nos permite <mark><b class="t" data-tr="deal with loads">enfrentarnos a cargas</b> mediante la acción de los músculos</mark>. Podemos <b class="t" data-tr="overcome a load">vencer una carga</b> (<b class="t" data-tr="concentric contractions">contracciones concéntricas</b>), <b class="t" data-tr="slow it down">frenarla</b> (<b class="t" data-tr="eccentric contractions">contracciones excéntricas</b>) o <b class="t" data-tr="hold it still">mantenerla quieta</b> (<b class="t" data-tr="isometric contractions">contracciones isométricas</b>).</p>
+        </div>
+        <div class="bi">
+          <p lang="en">For example, when <b class="t" data-tr="levantar un libro">lifting a book</b> by <b class="t" data-tr="flexionar (doblar)">bending</b> your arm, the biceps contracts and overcomes the weight of the book, lifting it (a concentric contraction). If you stop the movement and hold the book in the air with your elbow half bent, the biceps neither shortens nor lengthens and the book stays still (an isometric contraction). If you slowly put the book back on the table, the biceps lengthens and the movement is controlled (an eccentric contraction).</p>
+          <p lang="es">Por ejemplo, al <b class="t" data-tr="lifting a book">levantar un libro</b> <b class="t" data-tr="to bend">flexionando</b> el brazo, el bíceps se contrae y vence el peso del libro, levantándolo (contracción concéntrica). Si detienes el movimiento y mantienes el libro en el aire con el codo medio flexionado, el bíceps ni se acorta ni se alarga y el libro se queda quieto (contracción isométrica). Si vuelves a dejar el libro despacio sobre la mesa, el bíceps se alarga y el movimiento está controlado (contracción excéntrica).</p>
+        </div>
+        <div class="age-tip warn">
+          <span class="age-tag"><span lang="en">At your age</span><span lang="es">A tu edad</span></span>
+          <div class="bi"><p lang="en">Be careful with strength training. Light loads (your own body weight or very light weights) can help you become physically fit, whereas very heavy weights—even ones you can lift or resist—may cause serious injuries.</p>
+          <p lang="es">Ten cuidado con el entrenamiento de fuerza. Las cargas ligeras (tu propio peso corporal o pesos muy ligeros) pueden ayudarte a ponerte en forma, mientras que los pesos muy pesados —aunque seas capaz de levantarlos o aguantarlos— pueden causar lesiones graves.</p></div>
+        </div>
+      </div>
+    </article>
+
+    <!-- SPEED -->
+    <article class="ability c-spd reveal" id="speed">
+      <div class="ability-art">
+        <div class="reaction" id="reaction">
+          <button type="button" class="reaction-pad" id="reactionPad" aria-live="polite">
+            <span class="r-state" data-state="idle">
+              <svg viewBox="0 0 64 64" class="r-watch" aria-hidden="true"><circle cx="32" cy="35" r="22" fill="none" stroke="currentColor" stroke-width="5"/><rect x="27" y="4" width="10" height="7" rx="2" fill="currentColor"/><line x1="32" y1="35" x2="32" y2="20" stroke="currentColor" stroke-width="5" stroke-linecap="round" class="r-hand"/></svg>
+              <b class="bi-title small"><span lang="en">Test your reaction speed</span><span lang="es">Pon a prueba tu velocidad de reacción</span></b>
+              <small class="bi-inline"><span lang="en">Tap here to start</span><span lang="es">Toca aquí para empezar</span></small>
+            </span>
+            <span class="r-state" data-state="wait"><b class="r-big"><span lang="en">Wait…</span><span lang="es">Espera…</span></b><small class="bi-inline"><span lang="en">Tap when it turns green</span><span lang="es">Toca cuando se ponga verde</span></small></span>
+            <span class="r-state" data-state="go"><b class="r-big"><span lang="en">GO!</span><span lang="es">¡YA!</span></b></span>
+            <span class="r-state" data-state="early"><b class="r-big"><span lang="en">Too soon!</span><span lang="es">¡Demasiado pronto!</span></b><small class="bi-inline"><span lang="en">Tap to try again</span><span lang="es">Toca para repetir</span></small></span>
+            <span class="r-state" data-state="result"><b class="r-big"><span id="rTime">0</span> ms</b><small class="bi-inline"><span lang="en">Your reaction time · tap to try again</span><span lang="es">Tu tiempo de reacción · toca para repetir</span></small></span>
+          </button>
+          <div class="r-best"><span lang="en">Best</span><span lang="es">Mejor</span>: <b id="rBest">–</b></div>
+        </div>
+      </div>
+      <div class="ability-body">
+        <h3 class="ability-title bi-title"><span lang="en">Speed</span><span lang="es">Velocidad</span>
+          <button type="button" class="listen" data-say="Speed" aria-label="Listen"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9v6h4l5 4V5L8 9H4zm12.5 3a4.5 4.5 0 0 0-2.5-4v8a4.5 4.5 0 0 0 2.5-4z"/></svg></button></h3>
+        <div class="bi def">
+          <p lang="en"><b class="t" data-tr="velocidad">Speed</b> is the basic physical ability that allows us to <mark>perform an action in the shortest possible time</mark>.</p>
+          <p lang="es">La <b class="t" data-tr="speed">velocidad</b> es la cualidad física básica que nos permite <mark>realizar una acción en el menor tiempo posible</mark>.</p>
+        </div>
+        <div class="types three">
+          <div class="type">
+            <svg viewBox="0 0 48 48" class="type-ic" aria-hidden="true"><path d="M26 4 10 28h12l-4 16 20-26H26z"/></svg>
+            <b class="bi-title small"><span lang="en">Reaction speed</span><span lang="es">Velocidad de reacción</span></b>
+            <div class="bi"><p lang="en">The time it takes us to give an appropriate response.</p><p lang="es">El tiempo que tardamos en dar una respuesta adecuada.</p></div>
+          </div>
+          <div class="type">
+            <svg viewBox="0 0 48 48" class="type-ic" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round"><path d="M12 38 C 14 20, 26 10, 40 10"/><path d="M32 6l8 4-5 7"/></g></svg>
+            <b class="bi-title small"><span lang="en">Movement speed</span><span lang="es">Velocidad gestual</span></b>
+            <div class="bi"><p lang="en">The time it takes to perform a single movement.</p><p lang="es">El tiempo que tardamos en realizar un único movimiento.</p></div>
+          </div>
+          <div class="type">
+            <svg viewBox="0 0 48 48" class="type-ic" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round"><path d="M6 34h30"/><path d="M30 26l8 8-8 8"/><path d="M6 24h14M6 14h20"/></g></svg>
+            <b class="bi-title small"><span lang="en">Speed of locomotion</span><span lang="es">Velocidad de desplazamiento</span></b>
+            <div class="bi"><p lang="en">The time it takes to cover a distance.</p><p lang="es">El tiempo que tardamos en recorrer una distancia.</p></div>
+          </div>
+        </div>
+        <div class="age-tip">
+          <span class="age-tag"><span lang="en">At your age</span><span lang="es">A tu edad</span></span>
+          <div class="bi"><p lang="en">It is best to <b class="t" data-tr="centrarse en">focus on</b> reaction speed and, to a lesser extent, movement speed. Speed of locomotion is better developed later.</p>
+          <p lang="es">Lo mejor es <b class="t" data-tr="to focus on">centrarse en</b> la velocidad de reacción y, en menor medida, en la velocidad gestual. La velocidad de desplazamiento es mejor desarrollarla más adelante.</p></div>
+        </div>
+      </div>
+    </article>
+
+    <!-- FLEXIBILITY -->
+    <article class="ability c-flx reveal" id="flexibility">
+      <div class="ability-art">
+        <div class="art-stage" id="artFlexibility" aria-hidden="true"></div>
+        <div class="caption bi">
+          <p lang="en">Reach slowly… and hold the position: the range of movement grows.</p>
+          <p lang="es">Llega despacio… y mantén la posición: la amplitud del movimiento aumenta.</p>
+        </div>
+      </div>
+      <div class="ability-body">
+        <h3 class="ability-title bi-title"><span lang="en">Flexibility</span><span lang="es">Flexibilidad</span>
+          <button type="button" class="listen" data-say="Flexibility" aria-label="Listen"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9v6h4l5 4V5L8 9H4zm12.5 3a4.5 4.5 0 0 0-2.5-4v8a4.5 4.5 0 0 0 2.5-4z"/></svg></button></h3>
+        <div class="bi def">
+          <p lang="en"><b class="t" data-tr="flexibilidad">Flexibility</b> is the basic physical ability that allows us to <mark><b class="t" data-tr="moverse con la máxima amplitud posible">move through the greatest possible range</b></mark>, thanks to <b class="t" data-tr="movilidad articular">joint mobility</b> and <b class="t" data-tr="elasticidad muscular">muscle elasticity</b>.</p>
+          <p lang="es">La <b class="t" data-tr="flexibility">flexibilidad</b> es la cualidad física básica que nos permite <mark><b class="t" data-tr="to move through the greatest possible range">movernos con la mayor amplitud posible</b></mark>, gracias a la <b class="t" data-tr="joint mobility">movilidad articular</b> y a la <b class="t" data-tr="muscle elasticity">elasticidad muscular</b>.</p>
+        </div>
+        <div class="types">
+          <div class="type">
+            <b class="bi-title small"><span lang="en">Static flexibility</span><span lang="es">Flexibilidad estática</span></b>
+            <div class="bi"><p lang="en">Holding a position at the maximum range.</p><p lang="es">Mantener una posición en la máxima amplitud.</p></div>
+          </div>
+          <div class="type">
+            <b class="bi-title small"><span lang="en">Dynamic flexibility</span><span lang="es">Flexibilidad dinámica</span></b>
+            <div class="bi"><p lang="en">Reaching the maximum range of a joint while moving.</p><p lang="es">Alcanzar la máxima amplitud de una articulación en movimiento.</p></div>
+          </div>
+        </div>
+        <div class="age-tip">
+          <span class="age-tag"><span lang="en">At your age</span><span lang="es">A tu edad</span></span>
+          <div class="bi"><p lang="en">You can and should work on flexibility <b class="t" data-tr="siempre que sea posible">whenever possible</b>, but you should first develop a good level of static flexibility before working on dynamic flexibility.</p>
+          <p lang="es">Puedes y debes trabajar la flexibilidad <b class="t" data-tr="whenever possible">siempre que sea posible</b>, pero primero debes desarrollar un buen nivel de flexibilidad estática antes de trabajar la dinámica.</p></div>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- ================= 2. PSYCHOMOTOR ABILITIES ================= -->
+<section class="section" id="psycho">
+  <div class="wrap">
+    <header class="sec-head reveal">
+      <span class="sec-num">02</span>
+      <h2 class="bi-title">
+        <span lang="en">Psychomotor abilities</span>
+        <span lang="es">Cualidades psicomotrices</span>
+      </h2>
+    </header>
+    <div class="bi reveal">
+      <p lang="en">Psychomotor abilities help us function effectively both in everyday life and in physical and sporting activities. There are three:</p>
+      <p lang="es">Las cualidades psicomotrices nos ayudan a desenvolvernos con eficacia tanto en la vida diaria como en las actividades físicas y deportivas. Son tres:</p>
+    </div>
+
+    <!-- BALANCE -->
+    <article class="ability c-bal reveal" id="balance">
+      <div class="ability-art">
+        <div class="art-stage" id="artBalance" aria-hidden="true"></div>
+        <div class="legend">
+          <span class="lg"><i class="dot cog"></i><span lang="en">Centre of gravity</span><span lang="es">Centro de gravedad</span></span>
+          <span class="lg"><i class="dot base"></i><span lang="en">Base of support</span><span lang="es">Base de sustentación</span></span>
+        </div>
+      </div>
+      <div class="ability-body">
+        <h3 class="ability-title bi-title"><span lang="en">Balance</span><span lang="es">Equilibrio</span>
+          <button type="button" class="listen" data-say="Balance" aria-label="Listen"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9v6h4l5 4V5L8 9H4zm12.5 3a4.5 4.5 0 0 0-2.5-4v8a4.5 4.5 0 0 0 2.5-4z"/></svg></button></h3>
+        <div class="bi def">
+          <p lang="en"><b class="t" data-tr="equilibrio">Balance</b> is the psychomotor ability that allows us to <mark>maintain a body position</mark> in order to perform an action or simply to hold that position.</p>
+          <p lang="es">El <b class="t" data-tr="balance">equilibrio</b> es la cualidad psicomotriz que nos permite <mark>mantener una posición del cuerpo</mark> para realizar una acción o, simplemente, para sostener esa posición.</p>
+        </div>
+        <div class="bi">
+          <p lang="en">Balance plays a very important role in body control during all physical and sporting activities. Good balance is essential for overall dynamic coordination and for <b class="t" data-tr="movimiento independiente de los miembros superiores e inferiores">independent movement of the upper and lower limbs</b>. Balance depends on physical factors (<b class="t" data-tr="base de sustentación">base of support</b>, <b class="t" data-tr="centro de gravedad">centre of gravity</b>, etc.) and psychological factors (fear, habit, etc.).</p>
+          <p lang="es">El equilibrio tiene un papel muy importante en el control del cuerpo durante todas las actividades físicas y deportivas. Un buen equilibrio es esencial para la coordinación dinámica general y para el <b class="t" data-tr="independent movement of the upper and lower limbs">movimiento independiente de los miembros superiores e inferiores</b>. El equilibrio depende de factores físicos (<b class="t" data-tr="base of support">base de sustentación</b>, <b class="t" data-tr="centre of gravity">centro de gravedad</b>, etc.) y de factores psicológicos (miedo, costumbre, etc.).</p>
+        </div>
+        <div class="types">
+          <div class="type">
+            <b class="bi-title small"><span lang="en">Static balance</span><span lang="es">Equilibrio estático</span></b>
+            <div class="bi"><p lang="en">Controlling body posture without moving.</p><p lang="es">Controlar la postura del cuerpo sin moverse.</p></div>
+          </div>
+          <div class="type">
+            <b class="bi-title small"><span lang="en">Dynamic balance</span><span lang="es">Equilibrio dinámico</span></b>
+            <div class="bi"><p lang="en">Controlling body posture while moving.</p><p lang="es">Controlar la postura del cuerpo en movimiento.</p></div>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- COORDINATION -->
+    <article class="ability c-coo reveal" id="coordination">
+      <div class="ability-art">
+        <div class="art-stage" id="artCoordination" aria-hidden="true"></div>
+        <div class="caption bi">
+          <p lang="en">Juggling: a classic example of hand–eye coordination.</p>
+          <p lang="es">Los malabares: un ejemplo clásico de coordinación óculo-manual.</p>
+        </div>
+      </div>
+      <div class="ability-body">
+        <h3 class="ability-title bi-title"><span lang="en">Coordination</span><span lang="es">Coordinación</span>
+          <button type="button" class="listen" data-say="Coordination" aria-label="Listen"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9v6h4l5 4V5L8 9H4zm12.5 3a4.5 4.5 0 0 0-2.5-4v8a4.5 4.5 0 0 0 2.5-4z"/></svg></button></h3>
+        <div class="bi def">
+          <p lang="en"><b class="t" data-tr="coordinación">Coordination</b> is the psychomotor ability that allows us to <mark>perform movements in the correct order</mark> to achieve maximum precision, effectiveness, <b class="t" data-tr="economía de esfuerzo">economy of effort</b> and <b class="t" data-tr="armonía">harmony</b>.</p>
+          <p lang="es">La <b class="t" data-tr="coordination">coordinación</b> es la cualidad psicomotriz que nos permite <mark>realizar los movimientos en el orden correcto</mark> para conseguir la máxima precisión, eficacia, <b class="t" data-tr="economy of effort">economía de esfuerzo</b> y <b class="t" data-tr="harmony">armonía</b>.</p>
+        </div>
+        <div class="bi">
+          <p lang="en">Motor coordination is an element of movement that depends on our level of development, our <b class="t" data-tr="potencial genético">genetic potential</b> for controlling movement and <b class="t" data-tr="estímulos">stimuli</b>, and the experiences and learning we acquire <b class="t" data-tr="a lo largo de la vida">throughout life</b>.</p>
+          <p lang="es">La coordinación motriz es un elemento del movimiento que depende de nuestro nivel de desarrollo, de nuestro <b class="t" data-tr="genetic potential">potencial genético</b> para controlar el movimiento y los <b class="t" data-tr="stimuli">estímulos</b>, y de las experiencias y aprendizajes que adquirimos <b class="t" data-tr="throughout life">a lo largo de la vida</b>.</p>
+        </div>
+        <div class="types three">
+          <div class="type">
+            <svg viewBox="0 0 48 48" class="type-ic" aria-hidden="true"><circle cx="30" cy="8" r="5"/><path d="M28 14 20 26l8 4-4 14M20 26l-8 6M26 18l10 6" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <b class="bi-title small"><span lang="en">General dynamic coordination</span><span lang="es">Coordinación dinámica general</span></b>
+            <div class="bi"><p lang="en">Involves a large part of the body. Examples: walking, hopping on one leg, high jump, somersaults, round-offs, cartwheels and rolls.</p><p lang="es">Interviene gran parte del cuerpo. Ejemplos: caminar, saltar a la pata coja, salto de altura, saltos mortales, rondadas, ruedas laterales y volteretas.</p></div>
+          </div>
+          <div class="type">
+            <svg viewBox="0 0 48 48" class="type-ic" aria-hidden="true"><circle cx="14" cy="10" r="5"/><circle cx="34" cy="10" r="5"/><path d="M10 44V30a6 6 0 0 1 6-6h16a6 6 0 0 1 6 6v14" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round"/></svg>
+            <b class="bi-title small"><span lang="en">Hand–eye coordination</span><span lang="es">Coordinación óculo-manual</span></b>
+            <div class="bi"><p lang="en">Links the use of the hands with <b class="t" data-tr="manejo de objetos">handling objects</b>. Examples: juggling, throwing and catching with the hand.</p><p lang="es">Relaciona el uso de las manos con el <b class="t" data-tr="handling objects">manejo de objetos</b>. Ejemplos: hacer malabares, lanzar y recoger con la mano.</p></div>
+          </div>
+          <div class="type">
+            <svg viewBox="0 0 48 48" class="type-ic" aria-hidden="true"><circle cx="34" cy="32" r="9" fill="none" stroke="currentColor" stroke-width="4"/><path d="M8 40h8l6-10" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <b class="bi-title small"><span lang="en">Foot–eye coordination</span><span lang="es">Coordinación óculo-pédica</span></b>
+            <div class="bi"><p lang="en">Links the use of the feet with handling objects. Examples: kicking and receiving a ball with the foot.</p><p lang="es">Relaciona el uso de los pies con el manejo de objetos. Ejemplos: golpear y recibir un balón con el pie.</p></div>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- AGILITY -->
+    <article class="ability c-agi reveal" id="agility">
+      <div class="ability-art">
+        <div class="art-stage" id="artAgility" aria-hidden="true"></div>
+        <div class="caption bi">
+          <p lang="en">Quick changes of direction with precision and the least energy.</p>
+          <p lang="es">Cambios rápidos de dirección, con precisión y gastando la menor energía.</p>
+        </div>
+      </div>
+      <div class="ability-body">
+        <h3 class="ability-title bi-title"><span lang="en">Agility</span><span lang="es">Agilidad</span>
+          <button type="button" class="listen" data-say="Agility" aria-label="Listen"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9v6h4l5 4V5L8 9H4zm12.5 3a4.5 4.5 0 0 0-2.5-4v8a4.5 4.5 0 0 0 2.5-4z"/></svg></button></h3>
+        <div class="bi def">
+          <p lang="en"><b class="t" data-tr="agilidad">Agility</b> is the psychomotor ability that allows us to <mark>perform an action effectively</mark>: the greater the agility, the greater the effectiveness.</p>
+          <p lang="es">La <b class="t" data-tr="agility">agilidad</b> es la cualidad psicomotriz que nos permite <mark>realizar una acción con eficacia</mark>: cuanta más agilidad, más eficacia.</p>
+        </div>
+        <div class="bi">
+          <p lang="en">Agility is one of the main qualities a sportsperson should have, whatever their sport. It involves responding to a change in situation, which requires precision and speed of movement, a certain level of strength, flexibility, balance and good coordination, even when tired. In short, agility combines all coordination abilities. It allows movements to be performed in as little time and with as little energy as possible.</p>
+          <p lang="es">La agilidad es una de las principales cualidades que debe tener un deportista, sea cual sea su deporte. Supone responder a un cambio de situación, lo que exige precisión y rapidez de movimientos, cierto nivel de fuerza, flexibilidad, equilibrio y buena coordinación, incluso estando cansado. En resumen, la agilidad combina todas las capacidades coordinativas. Permite realizar los movimientos en el menor tiempo y con la menor energía posibles.</p>
+        </div>
+        <div class="age-tip">
+          <span class="age-tag"><span lang="en">Remember</span><span lang="es">Recuerda</span></span>
+          <div class="bi"><p lang="en">Agility involves the whole body and has no different types. Training can lead to major improvements in agility, but this ability inevitably declines with old age. However, the greater the agility we develop when we are young, the more agility we are likely to retain in later life.</p>
+          <p lang="es">La agilidad implica a todo el cuerpo y no tiene tipos diferentes. Con entrenamiento se puede mejorar mucho, pero esta cualidad disminuye inevitablemente con la vejez. Sin embargo, cuanta más agilidad desarrollemos de jóvenes, más agilidad conservaremos probablemente en el futuro.</p></div>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- ================= 3. SUMMARY ================= -->
+<section class="section alt" id="summary">
+  <div class="wrap">
+    <header class="sec-head reveal">
+      <span class="sec-num">03</span>
+      <h2 class="bi-title">
+        <span lang="en">Summary map</span>
+        <span lang="es">Mapa resumen</span>
+      </h2>
+    </header>
+    <div class="map reveal">
+      <div class="map-root">
+        <b class="bi-title small"><span lang="en">Physical fitness</span><span lang="es">Condición física</span></b>
+      </div>
+      <div class="map-branches">
+        <div class="map-branch">
+          <div class="map-node"><span lang="en">Basic physical abilities</span><span lang="es">Cualidades físicas básicas</span></div>
+          <div class="map-leaves">
+            <a href="#endurance" class="leaf c-end"><b class="lf"><span lang="en">Endurance</span><span lang="es">Resistencia</span></b><small class="lf"><span lang="en">aerobic · anaerobic</span><span lang="es">aeróbica · anaeróbica</span></small></a>
+            <a href="#strength" class="leaf c-str"><b class="lf"><span lang="en">Strength</span><span lang="es">Fuerza</span></b><small class="lf"><span lang="en">concentric · eccentric · isometric</span><span lang="es">concéntrica · excéntrica · isométrica</span></small></a>
+            <a href="#speed" class="leaf c-spd"><b class="lf"><span lang="en">Speed</span><span lang="es">Velocidad</span></b><small class="lf"><span lang="en">reaction · movement · locomotion</span><span lang="es">reacción · gestual · desplazamiento</span></small></a>
+            <a href="#flexibility" class="leaf c-flx"><b class="lf"><span lang="en">Flexibility</span><span lang="es">Flexibilidad</span></b><small class="lf"><span lang="en">static · dynamic</span><span lang="es">estática · dinámica</span></small></a>
+          </div>
+        </div>
+        <div class="map-branch">
+          <div class="map-node"><span lang="en">Psychomotor abilities</span><span lang="es">Cualidades psicomotrices</span></div>
+          <div class="map-leaves">
+            <a href="#balance" class="leaf c-bal"><b class="lf"><span lang="en">Balance</span><span lang="es">Equilibrio</span></b><small class="lf"><span lang="en">static · dynamic</span><span lang="es">estático · dinámico</span></small></a>
+            <a href="#coordination" class="leaf c-coo"><b class="lf"><span lang="en">Coordination</span><span lang="es">Coordinación</span></b><small class="lf"><span lang="en">general dynamic · hand–eye · foot–eye</span><span lang="es">dinámica general · óculo-manual · óculo-pédica</span></small></a>
+            <a href="#agility" class="leaf c-agi"><b class="lf"><span lang="en">Agility</span><span lang="es">Agilidad</span></b><small class="lf"><span lang="en">no types · whole body</span><span lang="es">sin tipos · todo el cuerpo</span></small></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 4. VOCABULARY ================= -->
+<section class="section" id="vocab">
+  <div class="wrap">
+    <header class="sec-head reveal">
+      <span class="sec-num">04</span>
+      <h2 class="bi-title">
+        <span lang="en">Vocabulary</span>
+        <span lang="es">Vocabulario</span>
+      </h2>
+    </header>
+
+    <div class="vocab-tabs" role="tablist" aria-label="Vocabulary mode">
+      <button type="button" role="tab" class="tab active" data-vmode="list" aria-selected="true"><span lang="en">Word list</span><span lang="es">Lista de palabras</span></button>
+      <button type="button" role="tab" class="tab" data-vmode="cards" aria-selected="false"><span lang="en">Flashcards</span><span lang="es">Tarjetas</span></button>
+    </div>
+
+    <div id="vocabList">
+      <div class="vocab-tools">
+        <label class="search">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="2.2"/><path d="m20 20-4-4" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg>
+          <input type="search" id="vocabSearch" placeholder="Search in English or Spanish… / Busca en inglés o en español…" autocomplete="off">
+        </label>
+        <div class="chips" id="vocabCats"></div>
+      </div>
+      <p class="count" id="vocabCount" aria-live="polite"></p>
+      <div class="vocab-grid" id="vocabGrid"></div>
+    </div>
+
+    <div id="vocabCards" hidden>
+      <div class="cards-tools">
+        <div class="toggle-row" role="group" aria-label="Card direction">
+          <button type="button" class="pill active" data-dir="en"><span lang="en">English first</span><span lang="es">Primero inglés</span></button>
+          <button type="button" class="pill" data-dir="es"><span lang="en">Spanish first</span><span lang="es">Primero español</span></button>
+        </div>
+        <button type="button" class="btn btn-ghost small" id="cardShuffle">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h3c5 0 5 10 10 10h3M4 17h3c2 0 3-1.5 4-3.5M17 7h3m-3 0c-2 0-3 1.5-4 3.5M18 4l3 3-3 3M18 14l3 3-3 3" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span lang="en">Shuffle</span><span lang="es">Mezclar</span>
+        </button>
+      </div>
+      <div class="flash-wrap">
+        <button type="button" class="flash" id="flash" aria-live="polite">
+          <span class="flash-inner">
+            <span class="flash-face front"><small id="flashFrontTag">EN</small><b id="flashFront"></b><em><span lang="en">Tap to flip</span><span lang="es">Toca para girar</span></em></span>
+            <span class="flash-face back"><small id="flashBackTag">ES</small><b id="flashBack"></b></span>
+          </span>
+        </button>
+      </div>
+      <div class="flash-nav">
+        <button type="button" class="icon-btn big" id="cardPrev" aria-label="Previous"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m15 5-7 7 7 7" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+        <span id="cardPos">1 / 1</span>
+        <button type="button" class="icon-btn big" id="cardSay" aria-label="Listen"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9v6h4l5 4V5L8 9H4zm12.5 3a4.5 4.5 0 0 0-2.5-4v8a4.5 4.5 0 0 0 2.5-4z"/></svg></button>
+        <button type="button" class="icon-btn big" id="cardNext" aria-label="Next"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 5 7 7-7 7" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 5. QUIZ ================= -->
+<section class="section alt" id="quiz">
+  <div class="wrap narrow">
+    <header class="sec-head reveal">
+      <span class="sec-num">05</span>
+      <h2 class="bi-title">
+        <span lang="en">Check your understanding</span>
+        <span lang="es">Comprueba lo que has aprendido</span>
+      </h2>
+    </header>
+    <div class="quiz reveal" id="quizBox"></div>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap footer-inner">
+    <div>
+      <b>Physical Fitness · 2º ESO</b>
+      <p><span lang="en">Physical Education · Bilingual section</span><span lang="es">Educación Física · Sección bilingüe</span></p>
+    </div>
+    <p class="small-print"><span lang="en">Text based on the unit “Physical Fitness”. Spanish translation and animated illustrations made for this website.</span><span lang="es">Texto basado en el tema «Physical Fitness». Traducción al español e ilustraciones animadas creadas para esta web.</span></p>
+  </div>
+</footer>
+
+<!-- Pop-up de traducción de palabras -->
+<div class="pop" id="pop" role="dialog" aria-hidden="true">
+  <div class="pop-row"><small>EN</small><b id="popEn"></b><button type="button" class="listen" id="popSay" aria-label="Listen"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9v6h4l5 4V5L8 9H4zm12.5 3a4.5 4.5 0 0 0-2.5-4v8a4.5 4.5 0 0 0 2.5-4z"/></svg></button></div>
+  <div class="pop-row"><small>ES</small><span id="popEs"></span></div>
+</div>
+
+<script src="js/data.js"></script>
+<script src="js/art.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
